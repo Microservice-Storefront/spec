@@ -1,0 +1,24 @@
+server:
+  port: 8000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      default-zone: http://localhost:8070/eureka
+
+info:
+  app:
+    name: Authorization Server
+
+endpoints:
+  shutdown:
+    enabled: true
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
