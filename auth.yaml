@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8000 
 
 eureka:
   instance:
@@ -22,3 +22,12 @@ management:
   endpoint:
     shutdown:
       enabled: true
+
+spring:
+  security:
+    oauth2:
+      client: 
+        registration:
+          google:
+            client-id: 901419559875-bmfve16j9gg88tvejmmnjeuqij2et7ga.apps.googleusercontent.com 
+            client-secret: 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
